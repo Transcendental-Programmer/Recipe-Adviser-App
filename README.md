@@ -22,19 +22,19 @@ Recipe Advisor is a web application that allows users to discover delicious reci
 ## Images
 
 ### Home Page
-![Home Page](static/images/home_page.png)
+![Home Page](https://github.com/Transcendental-Programmer/Recipe-Adviser-App/blob/main/static/images/home.png)
 
 ### Recipe Collection
-![Recipe Collection](static/images/recipe_collection.png)
+![Recipe Collection](https://github.com/Transcendental-Programmer/Recipe-Adviser-App/blob/main/static/images/all_recipes.png)
 
 ### Recipe Details
-![Recipe Details](static/images/recipe_details.png)
+![Recipe Details](https://github.com/Transcendental-Programmer/Recipe-Adviser-App/blob/main/static/images/recipe_details.png)
 
 ### Test Model
-![Test Model](static/images/test_model.png)
+![Test Model](https://github.com/Transcendental-Programmer/Recipe-Adviser-App/blob/main/static/images/test_model.png)
 
 ### Recommendations
-![Recommendations](static/images/recommendations.png)
+![Recommendations](https://github.com/Transcendental-Programmer/Recipe-Adviser-App/blob/main/static/images/recommedations_page.png)
 
 ## Features
 
