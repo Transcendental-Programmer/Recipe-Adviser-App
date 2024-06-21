@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>Recipe Advisor</h1>
+            <p>Discover delicious recipes based on your ingredients!</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>How to use the app:</h2>
+        <ol>
+            <li>Click on "Explore Recipes" to browse our collection of recipes.</li>
+            <li>Click on "Test Model" to get personalized recipe recommendations based on your ingredients.</li>
+        </ol>
+        <div>
+            <a href="{{ url_for('all_recipes') }}" class="btn">Explore Recipes</a>
+            <a href="{{ url_for('test_model') }}" class="btn btn-secondary">Test Model</a>
+        </div>
+    </div>
+</body>
+</html>

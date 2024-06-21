@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Model - Recipe Advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>Test Recipe Model</h1>
+            <p>Get personalized recipe recommendations based on your ingredients!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="test-model-form">
+            <h2>Enter Your Ingredients</h2>
+            <form action="{{ url_for('recommend') }}" method="post">
+                <div class="form-group">
+                    <label for="ingredients">Ingredients (comma-separated):</label>
+                    <input type="text" id="ingredients" name="ingredients" required placeholder="e.g., chicken, tomatoes, onions">
+                </div>
+                <button type="submit" class="btn btn-primary">Get Recommendations</button>
+            </form>
+        </div>
+        <div class="navigation-buttons">
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>
+            <a href="{{ url_for('all_recipes') }}" class="btn">Browse All Recipes</a>
+        </div>
+    </div>
+</body>
+</html>

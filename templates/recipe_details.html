@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ recipe.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-details">
+            <h1>{{ recipe.title }}</h1>
+            <h2>Ingredients:</h2>
+            <p>{{ recipe.ingredients }}</p>
+            <h2>Method:</h2>
+            <p>{{ recipe.method }}</p>
+            <h2>Main Ingredients:</h2>
+            <p>{{ recipe['Main ingredients'] }}</p>
+            <h2>Cuisine:</h2>
+            <p>{{ recipe.cuisine }}</p>
+            <h2>Course:</h2>
+            <p>{{ recipe.course }}</p>
+            <h2>Prep Time:</h2>
+            <p>{{ recipe['Prep time'] }}</p>
+            <h2>Cook Time:</h2>
+            <p>{{ recipe['Cook time'] }}</p>
+            <h2>Serve:</h2>
+            <p>{{ recipe.serve }}</p>
+            <h2>Taste:</h2>
+            <p>{{ recipe.taste }}</p>
+            <h2>Level of Cooking:</h2>
+            <p>{{ recipe['Level of cooking'] }}</p>
+            <h2>Veg/Non-Veg:</h2>
+            <p>{{ recipe['Veg/Non Veg'] }}</p>
+        </div>
+        <a href="{{ url_for('all_recipes') }}" class="btn">Back to Recipe Collection</a>
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>
+    </div>
+</body>
+</html>

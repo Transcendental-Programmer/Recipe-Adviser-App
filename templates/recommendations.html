@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Recipes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Recipes</h1>
+        <div class="recipe-list">
+            {% for recipe in recipes %}
+            <div class="recipe-card" data-recipe="{{ recipe.title }}">
+                <div class="recipe-card-content">
+                    <h3>{{ recipe.title }}</h3>
+                    <p><span class="recipe-tag">{{ recipe.cuisine }}</span></p>
+                    <p><span class="recipe-tag">{{ recipe.course }}</span></p>
+                    <p><strong>Main Ingredients:</strong> {{ recipe.main_ingredients }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('test_model') }}" class="btn">Try Again</a>
+        <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
